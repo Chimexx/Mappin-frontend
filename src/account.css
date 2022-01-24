@@ -1,0 +1,64 @@
+.button-container {
+	display: inline-block;
+	flex-direction: column;
+	width: 100%;
+}
+.input-container {
+	display: flex;
+	position: absolute;
+	left: -250px;
+	transition: all ease-in-out 0.5s;
+}
+.accountButton {
+	height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+	background: #4287f5;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+	transition: all ease-in-out 0.3s;
+}
+
+.accountButton:hover {
+	background: #0b57d1;
+}
+.input {
+	margin-bottom: 10px;
+	padding-left: 10px;
+	height: 30px;
+	width: 240px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	background: rgba(66, 135, 245, 0.05);
+}
+
+.submitButton {
+	background: #4287f5;
+	border: none;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 10px;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all ease-in-out 0.3s;
+}
+
+.submitButton:hover {
+	background: #0b57d1;
+}
+
+.user strong {
+	text-transform: capitalize;
+}
+
+.show {
+	left: 8px;
+}

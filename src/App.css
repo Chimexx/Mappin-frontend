@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+.container {
+	display: flex !important;
+	grid-template-columns: 1fr, 2fr;
+	height: 100vh;
+	justify-content: space-between;
+}
+.account {
+	min-width: 250px;
+	margin-right: 10px;
+}
+.card {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label {
+	font-size: 16px;
+	color: #4287f5;
+	background: rgba(66, 135, 245, 0.05);
+	padding: 0px 8px;
+	border-radius: 20px;
+	margin: 3px 0;
+	width: max-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4,
+p {
+	margin: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+b {
+	color: #4287f5;
+}
+.star {
+	color: #ff8400;
+}
+.username {
+	font-size: 14px;
+}
+.date {
+	font-size: 10px;
+	color: #4287f5;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	align-items: flex-start;
+}
+.title {
+	margin-bottom: 10px;
+	padding-left: 10px;
+	height: 30px;
+	width: 240px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	background: rgba(66, 135, 245, 0.05);
+}
+.review {
+	margin-bottom: 5px;
+	padding-left: 10px;
+	width: 240px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	background: rgba(66, 135, 245, 0.05);
+}
+.rating {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 0px 8px;
+	border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottomDiv {
+	margin-top: 10px;
+}
+.select {
+	width: 60px;
+	border: 1px solid #4287f5;
+	outline: none;
+	margin-right: 20px;
+}
+.option {
+	font-size: 16px;
+}
+.submitButton {
+	background: #4287f5;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all ease-in-out 0.3s;
+}
+
+.submitButton:hover {
+	background: #0b57d1;
+}
+
+.card strong {
+	text-transform: capitalize;
 }
